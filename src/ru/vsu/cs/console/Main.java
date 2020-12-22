@@ -31,8 +31,7 @@ public class Main {
     }
 
     private static void readFile(List<Integer> list1, List<Integer> list2, int f) {
-        File input = new File("D:\\IdeaProjects\\Task9\\src\\" +
-                "ru\\vsu\\cs\\file\\input" + f + ".txt");
+        File input = new File("src\\ru\\vsu\\cs\\file\\input" + f + ".txt");
         try {
             Scanner scannerFile = new Scanner(input);
 
@@ -54,8 +53,7 @@ public class Main {
     }
 
     private static void writeFile(List<Integer> listFinal, int f) throws Exception {
-        FileWriter output = new FileWriter("D:\\IdeaProjects\\Task9\\src\\" +
-                "ru\\vsu\\cs\\file\\output" + f + ".txt");
+        FileWriter output = new FileWriter("src\\ru\\vsu\\cs\\file\\output" + f + ".txt");
         output.write(String.valueOf(listFinal));
         output.close();
     }
